@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkr Productivity App</title>
+    <script src="https://kit.fontawesome.com/81a0b12bff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todolist.css">
+
+</head>
+<body>
+    
+
+<header class="header">
+    <a href="index.html">
+        <div class="logoholder">
+            <img src="./img/todo logo.png" alt="" class="logo">
+            <span>Checkr</span>
+        </div>
+    </a>
+
+    <nav class="navbar">
+        <img src="./img/notification_bell.png" alt="" class="bell">
+        <div class="horizontal"></div>
+        <div class="user">
+            <span class="profile_name">Eben Ofere</span>
+            <span class="user_class">New User</span>
+        </div>
+        <img src="./img/profile pic.jpg" alt="" class="profile_pic">
+        <img src="./img/down arrow.png" alt="" class="down_arrow">
+    </nav>
+</header>
+
+<div class="mainpagecontainer">
+    <section class="mainpage">
+        <div class="sidenav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="todolist.html">To-Do List</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Contact Lists</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="mainnav">
+            <span class="welcometext">Todo List</span>
+           
+            <div class="todoheader">
+                <form id="new-task-form">
+                    <input 
+                        type="text" 
+                        name="new-task-input" 
+                        id="new-task-input" 
+                        placeholder="What do you have planned?" />
+                    <input 
+                        type="submit"
+                        id="new-task-submit" 
+                        value="Add task" />
+                </form>
+            </div>
+            <div class="populatetodo">
+                <section class="task-list">
+                    <h2>Tasks</h2>
+        
+                    <div id="tasks"></div>
+                </section>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>&copy;2022 Made by Ebenezer Ofere. All Rights Reserved.</p>
+    </section>
+</div>
+
+
+
+<script src="todolist.js"></script>
+</body>
+</html>
