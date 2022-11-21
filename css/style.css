@@ -163,7 +163,7 @@ body{
     width: 18em;
     background: white;
     border-radius: 10px;
-    filter: drop-shadow(5px 5px 10px #D2CECE);
+    box-shadow: var(--box-shadow);
 
 }
 

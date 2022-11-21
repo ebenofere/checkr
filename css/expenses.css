@@ -118,3 +118,14 @@
     opacity: 1;
   }
   
+.form-control {
+  margin-top: 20px;
+}
+
+.negative {
+  color: #e74c3c;
+}
+
+.positive {
+  color: #2ecc71;
+}

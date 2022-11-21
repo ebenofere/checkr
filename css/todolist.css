@@ -1,20 +1,12 @@
 :root {
-	--dark: #374151;
-	--darker: #1F2937;
-	--darkest: #111827;
-	--grey: #6B7280;
-	--pink: #EC4899;
-	--purple: #8B5CF6;
-	--light: #EEE;
-
     --white:#ffffff;
     --blue: #5e6ebd;
     --red: #de5a96;
     --black:#132213;
     --gray: #4E545A;
+    --grey: #6B7280;
     --darkblue: #2A4F6E;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
- 
 }
 
 .todoheader {
@@ -71,30 +63,30 @@ input, button {
 }
 
 .populatetodo {
-	flex: 1 1 0%;
+    margin-top: 2em;
 	max-width: 800px;
 	width: 100%;
-	margin: 0 auto;
+    border: 1px solid #dfdfdf;
 }
 
 .task-list {
-	padding: 1rem;
+	padding: 3rem;
 }
 
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: var(--gray);
 	margin-bottom: 1rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: var(--blue);
 	padding: 1rem;
-	border-radius: 1rem;
-	margin-bottom: 1rem;
+	border-radius: 5px;
+	margin-bottom: 3rem;
 }
 
 .task .content {
@@ -102,26 +94,20 @@ input, button {
 }
 
 .task .content .text {
-	color: var(--light);
-	font-size: 1.125rem;
+	color: white;
+	font-size: 14px;
 	width: 100%;
 	display: block;
-	transition: 0.4s;
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--pink);
-}
-
-.task .actions {
-	display: flex;
-	margin: 0 -0.5rem;
+	color: yellow
 }
 
 .task .actions button {
 	cursor: pointer;
 	margin: 0 0.5rem;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: 0.4s;
@@ -136,11 +122,9 @@ input, button {
 }
 
 .task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    color: yellow;
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: #e74c3c;
 }
